@@ -1,0 +1,101 @@
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 18px 8px;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.settings-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.settings-form input,
+.settings-form select {
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.settings-form input:focus,
+.settings-form select:focus {
+  outline: 2px solid rgba(212, 165, 116, 0.45);
+  border-color: transparent;
+}
+
+.key-row {
+  display: flex;
+  gap: 8px;
+}
+
+.key-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.key-row button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0 10px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.settings-note,
+.settings-error,
+.settings-ok {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.settings-note {
+  color: var(--muted);
+}
+
+.settings-note code {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 0 3px;
+  border-radius: 4px;
+  background: var(--bg-soft);
+}
+
+.settings-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 4px 0 0;
+}
+
+.settings-sub-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.settings-sub-head span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.settings-error {
+  color: var(--danger);
+}
+
+.settings-ok {
+  color: var(--ok);
+}

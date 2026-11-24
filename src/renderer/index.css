@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f5f2;
+  --bg-elev: #ffffff;
+  --bg-soft: #f3f1ec;
+  --line: #e4e0d8;
+  --text: #2c2a26;
+  --muted: #7a746b;
+  --accent: #c4893d;
+  --accent-ink: #ffffff;
+  --ok: #3d8f5a;
+  --danger: #c45c4a;
+  --font: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --mono: "Cascadia Code", "Sarasa Gothic Mono", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  overflow: hidden;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(196, 137, 61, 0.55);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(196, 137, 61, 0.22);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d3c9;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c8c2b6;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

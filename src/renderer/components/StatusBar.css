@@ -1,0 +1,23 @@
+.status-bar {
+  height: 28px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  background: var(--bg-elev);
+}
+
+.status-bar span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-bar .is-error {
+  color: var(--danger);
+}
